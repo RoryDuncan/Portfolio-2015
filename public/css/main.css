@@ -379,6 +379,7 @@ header .logo a {
   font-weight: 300;
   letter-spacing: 3.5px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 header .logo a:hover {
   color: #000;
