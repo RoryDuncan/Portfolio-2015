@@ -1,0 +1,18 @@
+extends shared/layout.jade
+
+block title
+  title index.rory.duncan
+
+block scripts
+  script(src="/scripts/codepencanvas.js")
+  script(src="/scripts/hero.js")
+  - var scriptdata = "window.herodata = " + data
+  script!=scriptdata
+
+block content
+  .hero
+    .wrapper
+      div.overlay.text-center
+        h1 Hello
+        h3.alt I like coffee #[span.ampersand &amp;] web development
+      canvas#hero

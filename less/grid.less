@@ -1,0 +1,120 @@
+
+/* variables.less */
+
+  @column-count: 24;
+  @breakpoints: 300px, 540px, 768px, 1024px, 1650px;
+  @gutter-size: 2.5%;
+
+
+/* grid.less */
+
+
+* {
+  box-sizing: border-box;
+}
+
+.make-columns(@n, @i: 1) when (@i =< @n) {
+  .w@{i} {
+    width: (@i * 100% / @n);
+    margin: 0px 0px;
+    padding: 0px @gutter-size;
+    & when (@i = 1) {
+      padding: 0px 0px;
+    }
+  }
+  .make-columns(@n, (@i + 1));
+}
+
+
+.make-block-untils(@n, @i: 1) when (@i =< @n) {
+  .block-until-bp-@{i} {
+    float: none;
+    display: block;
+  }
+  @media screen and (min-width: extract(@breakpoints, @i)) {
+    .block-until-bp-@{i} {
+      float: left;
+    }
+  }
+  .make-block-untils(@n, @i + 1);
+}
+
+.row {
+  display: table;
+  clear: both;
+  width: 100%;
+  &::after,
+  &::before {
+    content: " ";
+    clear: both;
+    display: table;
+  }
+
+  & .col:first-child {
+    padding-left: 0px;
+  }
+}
+
+.wrapper {
+  display: table;
+  width: 100%;
+  padding: 0px 0.5%;
+  margin: 0 auto;
+}
+
+.clearfix {
+  clear: both;
+  display: table;
+}
+
+.col {
+  display: block;
+  float: none;
+}
+
+.col + .col {
+  // padding: 0px 20px;
+
+}
+
+.col:nth-of-type(4n-2) {
+  padding: 0px 0px;
+}
+
+
+.make-block-untils(length(@breakpoints));
+
+
+
+
+
+@media screen and (min-width: extract(@breakpoints, 1)) {
+  .col {
+    float: none;
+  }
+  .wrapper {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: extract(@breakpoints, 2)) {
+  .col {
+    float: left;
+  }
+  .wrapper {
+    width: extract(@breakpoints, 2);
+  }
+  .make-columns( @column-count );
+}
+
+@media screen and (min-width: extract(@breakpoints, 3)) {
+  .wrapper {
+    width: extract(@breakpoints, 3);
+  }
+}
+
+@media screen and (min-width: extract(@breakpoints, 4)) {
+  .wrapper {
+    width: extract(@breakpoints, 4);
+  }
+}

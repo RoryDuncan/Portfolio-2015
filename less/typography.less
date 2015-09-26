@@ -1,0 +1,40 @@
+@base-font-size: 18px;
+@heading-line-height: 1.83em;
+
+html,
+body {
+  font-size: @base-font-size;
+  line-height: @heading-line-height;
+}
+
+.scale-headings(@n, @i: 1) when (@i =< @n) {
+  @c: @n - @i;
+  h@{i},
+  .h@{i} {
+    font-weight: 400;
+    font-size: (1 + @c) * 0.46em;
+    line-height: @heading-line-height;
+    margin: 0 0; // reset margins and use line-height instead
+
+  }
+  .scale-headings(@n, (@i + 1));
+}
+
+.scale-headings(6);
+
+p {
+  margin: 0px 0px @base-font-size 0px;
+  line-height: @heading-line-height;
+}
+
+.fw100 {font-weight: 100}
+.fw200 {font-weight: 200}
+.fw300 {font-weight: 300}
+.fw400 {font-weight: 400}
+.fw500 {font-weight: 500}
+.fw600 {font-weight: 600}
+.fw700 {font-weight: 700}
+.fw800 {font-weight: 800}
+.fw900 {font-weight: 900}
+
+

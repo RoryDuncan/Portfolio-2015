@@ -1,0 +1,49 @@
+extends shared/content-layout.jade
+- console.log(postdata)
+unless postdata
+  - console.log("post data not existing")
+  - var postdata = {}
+
+block title
+  title contact.rory.duncan
+block prepend page
+  - var page = "contact"
+block fixed
+  h1 Contact
+  img(src="/images/dog.png", alt="")
+block body
+  .row
+    if messageSent
+      .thank-you
+        h2 Your message was sent!
+    else
+      .contact-form-wrapper
+        form(action="/contact", method="POST")
+          .row
+            h3 Send a message
+          .row
+            if errors
+              .errors=errors
+            .input-wrapper
+              label(for="name") Name
+              input(type="text", name="name", id="name", value=postdata.name)
+            .input-wrapper
+              label(for="email") Email
+              input(type="text", name="email", id="email", value=postdata.email)
+            .input-wrapper
+              label(for="message") Message
+              textarea(type="text", name="message", id="message", value=postdata.message)
+            .submit-wrapper
+              .csrf!=token
+              input(type="submit", value="Send")
+  .row
+    h3 Social / Other
+    ul.contact-methods
+      li
+        a.linkedin(href="https://www.linkedin.com/pub/rory-duncan/79/88b/532", target="_blank") LinkedIn
+      li
+        a.facebook(href="https://www.facebook.com/rory.is.actually.nickmiller", target="_blank") Facebook
+      li
+        a.twitter(href="https://twitter.com/robustrory", target="_blank") Twitter
+      li
+        a.github(href="https://github.com/RoryDuncan", target="_blank") github

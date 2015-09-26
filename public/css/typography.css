@@ -1,0 +1,78 @@
+html,
+body {
+  font-size: 18px;
+  line-height: 1.83em;
+}
+h1,
+.h1 {
+  font-weight: 400;
+  font-size: 2.76em;
+  line-height: 1.83em;
+  margin: 0 0;
+}
+h2,
+.h2 {
+  font-weight: 400;
+  font-size: 2.3em;
+  line-height: 1.83em;
+  margin: 0 0;
+}
+h3,
+.h3 {
+  font-weight: 400;
+  font-size: 1.84em;
+  line-height: 1.83em;
+  margin: 0 0;
+}
+h4,
+.h4 {
+  font-weight: 400;
+  font-size: 1.38em;
+  line-height: 1.83em;
+  margin: 0 0;
+}
+h5,
+.h5 {
+  font-weight: 400;
+  font-size: 0.92em;
+  line-height: 1.83em;
+  margin: 0 0;
+}
+h6,
+.h6 {
+  font-weight: 400;
+  font-size: 0.46em;
+  line-height: 1.83em;
+  margin: 0 0;
+}
+p {
+  margin: 0px 0px 18px 0px;
+  line-height: 1.83em;
+}
+.fw100 {
+  font-weight: 100;
+}
+.fw200 {
+  font-weight: 200;
+}
+.fw300 {
+  font-weight: 300;
+}
+.fw400 {
+  font-weight: 400;
+}
+.fw500 {
+  font-weight: 500;
+}
+.fw600 {
+  font-weight: 600;
+}
+.fw700 {
+  font-weight: 700;
+}
+.fw800 {
+  font-weight: 800;
+}
+.fw900 {
+  font-weight: 900;
+}

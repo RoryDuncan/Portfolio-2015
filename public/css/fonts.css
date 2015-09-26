@@ -1,0 +1,25 @@
+/*
+  font-family: 'Questrial', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Crimson Text', serif;
+ */
+html,
+body {
+  font-family: 'Quattrocento', serif;
+  font-weight: 300;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.alt {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+}

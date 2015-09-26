@@ -1,0 +1,31 @@
+{
+  "name": "portfolio-2015",
+  "version": "1.0.0",
+  "description": "2015 portfolio of Rory Duncan",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RoryDuncan/loquacious-octo-weasel.git"
+  },
+  "author": "Rory Duncan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RoryDuncan/loquacious-octo-weasel/issues"
+  },
+  "homepage": "https://github.com/RoryDuncan/loquacious-octo-weasel",
+  "dependencies": {
+    "csrf-lite": "^0.1.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-less": "^3.0.3",
+    "hapi": "8.4.0",
+    "jade": "^1.11.0",
+    "joi": "^6.6.1",
+    "jsonfile": "^2.2.2",
+    "nodemailer": "^1.4.0",
+    "nodemailer-wellknown": "^0.1.7"
+  }
+}

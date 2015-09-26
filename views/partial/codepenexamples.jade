@@ -1,0 +1,55 @@
+
+mixin codepenembed(data)
+  h5=data.title
+  div.reveals.delayed-load
+    iframe(height=data.embedheight,
+      scrolling='no',
+      data-src='//codepen.io/RoryDuncan/embed/#{data.src}/?height=#{data.embedheight}&theme-id=19320&default-tab=#{data.defaulttab}',
+      frameborder='no',
+      allowtransparency='true',
+      allowfullscreen='true',
+      style='width: 100%;')
+      p
+        | See the Pen
+        a(href='http://codepen.io/RoryDuncan/pen/#{data.src}/', target="_blank")=data.title
+        | by Rory Duncan (
+        a(href='http://codepen.io/RoryDuncan', target="_blank") @RoryDuncan
+        | ) on
+        a(href='http://codepen.io') CodePen
+        |.
+
+for codepen in codepens
+  +codepenembed(codepen)
+
+//- h5 prototyped website customization form
+//- iframe(height=embedheight, scrolling='no', src='//codepen.io/RoryDuncan/embed/waLrmy/?height=#{embedheight}&theme-id=19320&default-tab=result', frameborder='no', allowtransparency='true', allowfullscreen='true', style='width: 100%;')
+//-   p
+//-     | See the Pen
+//-     a(href='http://codepen.io/RoryDuncan/pen/waLrmy', target="_blank") Site Prototype Form
+//-     | by Rory Duncan (
+//-     a(href='http://codepen.io/RoryDuncan', target="_blank") @RoryDuncan
+//-     | ) on
+//-     a(href='http://codepen.io') CodePen
+//-     |.
+
+//- h5 tween library
+//- iframe(height=embedheight, scrolling='no', src='//codepen.io/RoryDuncan/embed/oXKeam/?height=#{embedheight}&theme-id=19320&default-tab=js', frameborder='no', allowtransparency='true', allowfullscreen='true', style='width: 100%;')
+//-   p
+//-     | See the Pen
+//-     a(href='http://codepen.io/RoryDuncan/pen/oXKeam/', target="_blank") learning how tweens work
+//-     | by Rory Duncan (
+//-     a(href='http://codepen.io/RoryDuncan', target="_blank") @RoryDuncan
+//-     | ) on
+//-     a(href='http://codepen.io') CodePen
+//-     |.
+
+//- h5 canvas helper
+//- iframe(height=embedheight, scrolling='no', src='//codepen.io/RoryDuncan/embed/qdwoyM/?height=#{embedheight}&theme-id=19320&default-tab=js', frameborder='no', allowtransparency='true', allowfullscreen='true', style='width: 100%;')
+//-   p
+//-     | See the Pen
+//-     a(href='http://codepen.io/RoryDuncan/pen/qdwoyM/', target="_blank") Canvas Helper Source
+//-     | by Rory Duncan (
+//-     a(href='http://codepen.io/RoryDuncan', target="_blank") @RoryDuncan
+//-     | ) on
+//-     a(href='http://codepen.io') CodePen
+//-     |.

@@ -1,0 +1,228 @@
+/* variables.less */
+/* grid.less */
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: table;
+  clear: both;
+  width: 100%;
+}
+.row::after,
+.row::before {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.row .col:first-child {
+  padding-left: 0px;
+}
+.wrapper {
+  display: table;
+  width: 100%;
+  padding: 0px 0.5%;
+  margin: 0 auto;
+}
+.clearfix {
+  clear: both;
+  display: table;
+}
+.col {
+  display: block;
+  float: none;
+}
+.col:nth-of-type(4n-2) {
+  padding: 0px 0px;
+}
+.block-until-bp-1 {
+  float: none;
+  display: block;
+}
+@media screen and (min-width: 300px) {
+  .block-until-bp-1 {
+    float: left;
+  }
+}
+.block-until-bp-2 {
+  float: none;
+  display: block;
+}
+@media screen and (min-width: 540px) {
+  .block-until-bp-2 {
+    float: left;
+  }
+}
+.block-until-bp-3 {
+  float: none;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .block-until-bp-3 {
+    float: left;
+  }
+}
+.block-until-bp-4 {
+  float: none;
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .block-until-bp-4 {
+    float: left;
+  }
+}
+.block-until-bp-5 {
+  float: none;
+  display: block;
+}
+@media screen and (min-width: 1650px) {
+  .block-until-bp-5 {
+    float: left;
+  }
+}
+@media screen and (min-width: 300px) {
+  .col {
+    float: none;
+  }
+  .wrapper {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 540px) {
+  .col {
+    float: left;
+  }
+  .wrapper {
+    width: 540px;
+  }
+  .w1 {
+    width: 4.16666667%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+    padding: 0px 0px;
+  }
+  .w2 {
+    width: 8.33333333%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w3 {
+    width: 12.5%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w4 {
+    width: 16.66666667%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w5 {
+    width: 20.83333333%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w6 {
+    width: 25%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w7 {
+    width: 29.16666667%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w8 {
+    width: 33.33333333%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w9 {
+    width: 37.5%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w10 {
+    width: 41.66666667%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w11 {
+    width: 45.83333333%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w12 {
+    width: 50%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w13 {
+    width: 54.16666667%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w14 {
+    width: 58.33333333%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w15 {
+    width: 62.5%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w16 {
+    width: 66.66666667%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w17 {
+    width: 70.83333333%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w18 {
+    width: 75%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w19 {
+    width: 79.16666667%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w20 {
+    width: 83.33333333%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w21 {
+    width: 87.5%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w22 {
+    width: 91.66666667%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w23 {
+    width: 95.83333333%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+  .w24 {
+    width: 100%;
+    margin: 0px 0px;
+    padding: 0px 2.5%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    width: 1024px;
+  }
+}

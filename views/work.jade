@@ -1,0 +1,85 @@
+extends shared/content-layout.jade
+
+block title
+  title work.rory.duncan
+
+block prepend page
+  - var page = "work"
+
+block fixed
+  h1 Work
+  p
+    a(href="#history") History,
+    | &nbsp;
+    a(href="#examples") Examples,
+    span.ampersand &amp;
+    a(href="#skills") Skills
+  img(src="/images/raccoon.png", alt="")
+
+block body
+    h3.alt#history History
+    ul.previous-work
+      li.position
+        .company-name Steps Marketing, Inc.
+        .title Front End Developer
+        .location Chico, CA
+        p.description Developed static web sites from design documents and provided support, maintainence, and updates using HTML, C#, LESS, MVC, .NET, &amp; javascript.
+      li.position
+        .company-name Navigation North
+        .title Junior Web Developer
+        .location Chico, CA
+        p.description Worked with a small team developing a niche, data-driven, web application using technologies such as Bootstrap, Stylus, Backbone.js, Marionette.js, Laravel, and Redis.
+      li.position
+        .company-name Primary Prevention Plus
+        .title QA / Intern Developer
+        .location Chico, CA
+        p.description  Developed a basic user-centered website with Javascript, PHP, and mySQL.
+
+    h3.alt#examples Examples
+    h4 On the web
+    ul.examples.row
+      - for example in examples
+        - var thumb = "/images/portfolio/thumbs/" + example.preview
+        li.example
+          .info
+            a.sitename(href=example.url, target="_blank")=example.sitename
+              .url=example.url
+
+          .preview
+            img(src=thumb, alt="Example of #{example.sitename}")
+    h4 On Codepen
+    p.muted I use codepen to prototype ideas and projects.
+    .codepens
+      include partial/codepenexamples.jade
+    h3.alt#skills Skills
+    ul.skills
+
+      li
+        .skillname(title="not jquery dependent") Javascript
+        .experience 4+ years, primary language of focus. Including coffeescript, and ECMA5+.
+      li
+        .skillname(title="and relevent http/doctype stuff, shabam") HTML5 #[small &amp;] CSS
+        .experience 8+ years
+      li
+        .skillname(title="LESS / SASS / SCSS / Stylus") CSS preprocessors #[small &amp;] frameworks
+        .experience 3+ years. Use LESS for personal projects, but have used all of them copiously.
+      li
+        .skillname Commandline Tools
+        .experience CLI's, Grunt, Gulp.
+      li
+        .skillname(title="jokes and satire") Git #[small &amp;] github
+        .experience -f -q seems to solve most problems
+
+      li
+        .skillname(title="I got into computers through graphic design") Adobe Photoshop
+        .experience Some graphics design experience
+      li
+        .skillname MVC, OOP, Big O Notation, etc
+        .experience More importantly, the ability to research, and find solutions. I read the manual.
+      li
+        .skillname Other Languages
+        .experience PHP, Ruby, Python, C#
+
+
+
+

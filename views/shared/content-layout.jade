@@ -1,0 +1,13 @@
+extends layout.jade
+block scripts
+  script(src="/scripts/tethered-layout.js")
+block content
+  block page
+    div(class=page)
+        .wrapper
+          .row.content-layout
+            .col.w8
+              .fixed
+                block fixed
+            .col.w16.unfixed
+              block body
