@@ -825,4 +825,7 @@ form input[type=submit]:hover {
   header {
     position: static;
   }
+  .hero canvas#hero {
+    display: none;
+  }
 }

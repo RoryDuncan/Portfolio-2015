@@ -41,6 +41,7 @@ run = function() {
   loaded = 0;
   data = window.herodata;
   el = document.getElementById("hero");
+  console.log(window.getComputedStyle(el).getPropertyValue("display"));
   canvas = new CodePenCanvas({
     el: el,
     maximize: false
