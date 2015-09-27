@@ -306,6 +306,7 @@ nav {
           color: #abc;
         }
         &:hover {
+          text-decoration: none;
           background-color: rgba(255,255,255,0.1);
         }
       }
@@ -500,5 +501,19 @@ form {
       }
 
     }
+  }
+}
+
+
+@media screen and (max-width: extract(@breakpoints, 3)) {
+
+  body {
+    padding-top: 0px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  header {
+    position: static;
   }
 }
