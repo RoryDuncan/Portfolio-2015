@@ -141,7 +141,6 @@ module.exports = (server) ->
     path: "/work"
     handler: (req, reply) ->
       # examples and codepens are used to generate the content
-
       reply.view("work", {examples, codepens})
 
 
