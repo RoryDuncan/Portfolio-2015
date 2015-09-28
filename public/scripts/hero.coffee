@@ -29,8 +29,9 @@ run = () ->
   data = window.herodata
   el = document.getElementById("hero")
   # test if canvas is visible, if it isn't, dont continue
-  console.log window.getComputedStyle(el).getPropertyValue("display")
 
+  if window.getComputedStyle(el).getPropertyValue("display") is "none"
+    return
 
   canvas = new CodePenCanvas({el, maximize: false})
   canvas.canvas.width = canvas.width = canvas.height = canvas.canvas.height = 500
