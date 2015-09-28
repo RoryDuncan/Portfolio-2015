@@ -860,10 +860,10 @@ form input[type=submit]:hover {
 }
 .contact ul.contact-methods li a {
   width: auto;
-  padding: 4px 8px;
+  padding: 4px 8px 4px 0px;
   float: left;
   display: inline-block;
-  margin: 8px 16px;
+  margin: 8px 16px 8px 0px;
   vertical-align: text-top;
   color: #123456;
   font-family: "Source Sans Pro", sans-serif;
