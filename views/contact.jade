@@ -1,8 +1,10 @@
 extends shared/content-layout.jade
-- console.log(postdata)
+
 unless postdata
-  - console.log("post data not existing")
   - var postdata = {}
+
+block append head
+  link(rel="stylesheet", href="/css/icons.css")
 
 block title
   title contact.rory.duncan
@@ -40,10 +42,18 @@ block body
     h3 Social / Other
     ul.contact-methods
       li
-        a.linkedin(href="https://www.linkedin.com/pub/rory-duncan/79/88b/532", target="_blank") LinkedIn
+        a.linkedin(href="https://www.linkedin.com/pub/rory-duncan/79/88b/532", target="_blank")
+          span.icon-linkedin.linkedin
+          | LinkedIn
       li
-        a.facebook(href="https://www.facebook.com/rory.is.actually.nickmiller", target="_blank") Facebook
+        a.facebook(href="https://www.facebook.com/rory.is.actually.nickmiller", target="_blank")
+          span.icon-facebook2.facebook
+          | Facebook
       li
-        a.twitter(href="https://twitter.com/robustrory", target="_blank") Twitter
+        a.twitter(href="https://twitter.com/robustrory", target="_blank")
+          span.icon-twitter2.twitter
+          | Twitter
       li
-        a.github(href="https://github.com/RoryDuncan", target="_blank") github
+        a.github(href="https://github.com/RoryDuncan", target="_blank")
+          span.icon-github4.github
+          | github

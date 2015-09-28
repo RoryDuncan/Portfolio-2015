@@ -493,10 +493,31 @@ form {
     .basic();
     li {
       a {
+        width: auto;
+        padding: 4px 8px;
+        float: left;
+        display: inline-block;
+        margin: 8px 16px;
+        vertical-align: text-top;
         color: @primary;
         .navigationFonts();
+        text-transform: lowercase;
+        span {
+          padding-right: 10px;
+          font-size: 1.5em;
+          position: relative;
+          top: 5px;
+
+        }
+
         &:hover {
-          color: @secondary;
+          text-decoration: none;
+          span {
+            &.facebook {color: #3B5998;}
+            &.linkedin {color: #0077b5;}
+            &.twitter {color: #55acee;}
+            &.github {color: #666;}
+          }
         }
       }
 

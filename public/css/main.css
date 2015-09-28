@@ -808,12 +808,37 @@ form input[type=submit]:hover {
   margin-top: 0px;
 }
 .contact ul.contact-methods li a {
+  width: auto;
+  padding: 4px 8px;
+  float: left;
+  display: inline-block;
+  margin: 8px 16px;
+  vertical-align: text-top;
   color: #123456;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
+  text-transform: lowercase;
+}
+.contact ul.contact-methods li a span {
+  padding-right: 10px;
+  font-size: 1.5em;
+  position: relative;
+  top: 5px;
 }
 .contact ul.contact-methods li a:hover {
-  color: #843813;
+  text-decoration: none;
+}
+.contact ul.contact-methods li a:hover span.facebook {
+  color: #3B5998;
+}
+.contact ul.contact-methods li a:hover span.linkedin {
+  color: #0077b5;
+}
+.contact ul.contact-methods li a:hover span.twitter {
+  color: #55acee;
+}
+.contact ul.contact-methods li a:hover span.github {
+  color: #666;
 }
 @media screen and (max-width: 768px) {
   body {
