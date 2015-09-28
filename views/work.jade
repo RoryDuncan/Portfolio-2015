@@ -3,6 +3,9 @@ extends shared/content-layout.jade
 block title
   title work.rory.duncan
 
+block prepend head
+  link(rel="stylesheet", href="/css/icons.css")
+
 block prepend page
   - var page = "work"
 
@@ -17,6 +20,7 @@ block fixed
   img(src="/images/raccoon.png", alt="")
 
 block body
+  section
     h3.alt#history History
     ul.previous-work
       li.position
@@ -35,6 +39,7 @@ block body
         .location Chico, CA
         p.description  Developed a basic user-centered website with Javascript, PHP, and mySQL.
 
+  section
     h3.alt#examples Examples
     h4 On the web
     ul.examples.row
@@ -44,16 +49,35 @@ block body
           .info
             a.sitename(href=example.url, target="_blank")=example.sitename
               .url=example.url
-
           .preview
             img(src=thumb, alt="Example of #{example.sitename}")
+
+    div.site-source
+      h5
+        span.icon-terminal
+        | www.Meow.coffee
+      p This website is open-sourced.
+        br
+        a(href="https://github.com/RoryDuncan/Portfolio-2015", target="_blank")
+          span.icon-github4
+          | View Source on Github
+        a(href="https://github.com/RoryDuncan/Portfolio-2015/commits/master", target="_blank")
+          span.icon-github4
+          | View commit log
+        a(href="https://github.com/RoryDuncan/Portfolio-2015/blob/master/package.json#L19-L29", target="_blank")
+          span.icon-github4
+          | View tools used
+
+
+
     h4 On Codepen
     p.muted I use codepen to prototype ideas and projects.
     .codepens
       include partial/codepenexamples.jade
+
+  section
     h3.alt#skills Skills
     ul.skills
-
       li
         .skillname(title="not jquery dependent") Javascript
         .experience 4+ years, primary language of focus. Including coffeescript, and ECMA 2015+.

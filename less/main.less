@@ -335,6 +335,58 @@ nav {
       }
     }
   }
+
+  .site-source {
+    background-color: #fdfdfd;
+    border-radius: 6px;
+    border: 1px solid #dbdbdb;
+    h5 {
+      padding: 8px;
+      background-color: #fff;
+      margin-top: 0px;
+      text-transform: lowercase;
+      .navigationFonts();
+      border-bottom: 1px solid #ddd;
+      span {
+        font-size: 1.2em;
+      }
+    }
+    p {
+      padding: 12px 8px;
+      margin-bottom: 0px;
+      a {
+        .navigationFonts();
+        text-transform: uppercase;
+
+        display: block;
+        margin-top: 8px;
+        text-decoration: none;
+        color: #aaa;
+        font-size: 0.8em;
+        line-height: 2em;
+        span.icon-github4 {
+          color: #ccc;
+          top: 6px;
+          font-size: 1.6em;
+        }
+        &:hover {
+          color: @primary;
+          span {
+            color: @ternary;
+          }
+        }
+      }
+    }
+    span {
+      padding-right: 16px;
+      position: relative;
+      top: 4px;
+    }
+    &:hover {
+      border: 1px solid #b2b2b2;
+    }
+  }
+
   .codepens {
     .reveals {
       position: relative;

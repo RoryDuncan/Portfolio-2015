@@ -616,6 +616,57 @@ nav ul.navlinks li a:hover {
   -webkit-transition: 0.22s ease-in all;
           transition: 0.22s ease-in all;
 }
+.work .site-source {
+  background-color: #fdfdfd;
+  border-radius: 6px;
+  border: 1px solid #dbdbdb;
+}
+.work .site-source h5 {
+  padding: 8px;
+  background-color: #fff;
+  margin-top: 0px;
+  text-transform: lowercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  border-bottom: 1px solid #ddd;
+}
+.work .site-source h5 span {
+  font-size: 1.2em;
+}
+.work .site-source p {
+  padding: 12px 8px;
+  margin-bottom: 0px;
+}
+.work .site-source p a {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 8px;
+  text-decoration: none;
+  color: #aaa;
+  font-size: 0.8em;
+  line-height: 2em;
+}
+.work .site-source p a span.icon-github4 {
+  color: #ccc;
+  top: 6px;
+  font-size: 1.6em;
+}
+.work .site-source p a:hover {
+  color: #123456;
+}
+.work .site-source p a:hover span {
+  color: #d3b861;
+}
+.work .site-source span {
+  padding-right: 16px;
+  position: relative;
+  top: 4px;
+}
+.work .site-source:hover {
+  border: 1px solid #b2b2b2;
+}
 .work .codepens .reveals {
   position: relative;
   background-color: #ededef;
