@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/RoryDuncan/loquacious-octo-weasel.git"
+    "url": "https://github.com/RoryDuncan/Portfolio-2015.git"
   },
   "author": "Rory Duncan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RoryDuncan/loquacious-octo-weasel/issues"
+    "url": "https://github.com/RoryDuncan/Portfolio-2015/issues"
   },
-  "homepage": "https://github.com/RoryDuncan/loquacious-octo-weasel",
+  "homepage": "https://github.com/RoryDuncan/Portfolio-2015",
   "dependencies": {
     "csrf-lite": "^0.1.1",
     "gulp": "^3.9.0",
