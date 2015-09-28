@@ -18,7 +18,7 @@ delayed = () ->
   # loads all delayed src iframes (that have data-src attr)
   items = document.querySelectorAll("[data-src]")
   return if items.length is 0
-  console.log items
+
   loader = document.querySelectorAll(".delayed-load")
   for i in [0...items.length]
     do (i) ->

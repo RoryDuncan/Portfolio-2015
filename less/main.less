@@ -269,7 +269,7 @@ nav {
   }
   ul.examples {
 
-    @slideAmount: 150px;
+    @slideAmount: 300px;
 
 
     .basic();
@@ -288,10 +288,11 @@ nav {
         position: absolute;
         overflow: hidden;
         display: block;
-        width: 100%;
+        width: @slideAmount;
+        height: 300px;
         text-align: center;
         color: #666;
-        transform: scale(1) translateY(@slideAmount*-1px);
+        transform: scale(1) translateX(@slideAmount*-1px);
         transition: 0.35s ease-in-out all 0.2s;
       }
       .sitename {
@@ -324,11 +325,11 @@ nav {
       &:hover {
 
         .info {
-          transform: scale(1) translateY(0px);
+          transform: scale(1) translateX(0px);
           transition: 0.22s ease-in-out all;
         }
         .preview img {
-          transform: translateY(80px);
+          transform: translateX(@slideAmount);
           transition: 0.22s ease-in all;
 
         }

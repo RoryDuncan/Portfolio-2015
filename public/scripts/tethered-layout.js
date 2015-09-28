@@ -26,7 +26,6 @@ delayed = function() {
   if (items.length === 0) {
     return;
   }
-  console.log(items);
   loader = document.querySelectorAll(".delayed-load");
   _results = [];
   for (i = _i = 0, _ref = items.length; 0 <= _ref ? _i < _ref : _i > _ref; i = 0 <= _ref ? ++_i : --_i) {

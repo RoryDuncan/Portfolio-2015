@@ -565,12 +565,13 @@ nav ul.navlinks li a:hover {
   position: absolute;
   overflow: hidden;
   display: block;
-  width: 100%;
+  width: 300px;
+  height: 300px;
   text-align: center;
   color: #666;
-  -webkit-transform: scale(1) translateY(-150px);
-      -ms-transform: scale(1) translateY(-150px);
-          transform: scale(1) translateY(-150px);
+  -webkit-transform: scale(1) translateX(-300px);
+      -ms-transform: scale(1) translateX(-300px);
+          transform: scale(1) translateX(-300px);
   -webkit-transition: 0.35s ease-in-out all 0.2s;
           transition: 0.35s ease-in-out all 0.2s;
 }
@@ -603,16 +604,16 @@ nav ul.navlinks li a:hover {
           transition: 0.35s ease-in-out all 0.2s;
 }
 .work ul.examples .example:hover .info {
-  -webkit-transform: scale(1) translateY(0px);
-      -ms-transform: scale(1) translateY(0px);
-          transform: scale(1) translateY(0px);
+  -webkit-transform: scale(1) translateX(0px);
+      -ms-transform: scale(1) translateX(0px);
+          transform: scale(1) translateX(0px);
   -webkit-transition: 0.22s ease-in-out all;
           transition: 0.22s ease-in-out all;
 }
 .work ul.examples .example:hover .preview img {
-  -webkit-transform: translateY(80px);
-      -ms-transform: translateY(80px);
-          transform: translateY(80px);
+  -webkit-transform: translateX(300px);
+      -ms-transform: translateX(300px);
+          transform: translateX(300px);
   -webkit-transition: 0.22s ease-in all;
           transition: 0.22s ease-in all;
 }
