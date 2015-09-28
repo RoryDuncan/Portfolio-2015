@@ -8,7 +8,25 @@ shuffle = (a) ->
         t = a[j]
         a[j] = a[i]
         a[i] = t
-    a
+    return a
+
+randomColor = () ->
+  c = () ->
+    return ~~(Math.random()*255)
+
+  return "rgb(#{c()}, #{c()}, #{c()})"
+
+composites = [
+  "color-dodge",
+  "color-burn",
+  "overlay",
+  "exclusion",
+  "hue"
+]
+
+randomComposite = () ->
+  n = ~~(Math.random()*composites.length)
+  return composites[n]
 
 # renders the images as a 3x3 grid on the canvas
 renderImagesAs3by3 = (canvas, images) ->
@@ -22,7 +40,15 @@ renderImagesAs3by3 = (canvas, images) ->
       x = (i % 3) * width
       if i % 3 is 0 and i isnt 1 and i isnt 0
         y += 1
-      canvas.drawImage(image, padding + x, padding + y * height, width, height)
+
+      canvas.globalCompositeOperation("source-over")
+      .drawImage(image, padding + x, padding + y * height, width, height)
+      .globalCompositeOperation(randomComposite())
+      .fillStyle((randomColor()))
+      .fillRect(padding + x, padding + y*height, width, height)
+      .globalCompositeOperation("source-over")
+
+
 run = () ->
   images = []
   loaded = 0
@@ -42,7 +68,7 @@ run = () ->
       y: canvas.height / 2
     }
     hovers = 1
-    changes = 10
+    changes = 3
     action = () ->
       renderImagesAs3by3(canvas, images)
       changes -= 1
@@ -56,7 +82,7 @@ run = () ->
     canvas.start()
     limited()
     canvas.canvas.addEventListener  "mouseover", () ->
-      changes =  2 + ~~(Math.random()*30)
+      changes =  2 + ~~(Math.random()*10)
 
 
 
