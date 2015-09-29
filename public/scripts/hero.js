@@ -72,7 +72,7 @@ run = function() {
       y: canvas.height / 2
     };
     hovers = 1;
-    changes = 3;
+    changes = 7;
     action = function() {
       renderImagesAs3by3(canvas, images);
       changes -= 1;
